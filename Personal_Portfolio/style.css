@@ -62,7 +62,8 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 .logo:hover {
@@ -169,7 +170,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 60vh;
+  margin-bottom:150px;
   /* background: #000; */
 }
 
@@ -183,13 +185,15 @@ section {
 }
 .profile-pic{
   border-radius: 1rem;
-  margin: 0 auto;
+  height: 550px;
+  width: 550px;
 }
 
 
 .section__text {
   align-self: center;
   text-align: center;
+  margin-top:150px;
 }
 
 .section__text p {
@@ -374,13 +378,33 @@ article .icon {
   margin-bottom: 0;
 }
 
+/* Default styles for medium to large screens */
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  width: 300px;
 }
 
+/* Styles for phones (small screens) */
+@media only screen and (max-width: 600px) {
+  .color-container {
+    width: 100%;
+    border-width: 2px;
+    padding: 10px;
+  }
+}
+
+/* Styles for large screens (e.g., large desktops) */
+@media only screen and (min-width: 1200px) {
+  .color-container {
+    width: 1100px;
+    border-width: 2px;
+  }
+}
+
+
 .project-img {
-  border-radius: 2rem;
+  border-radius: 5rem;
   width: 90%;
   height: 90%;
 }
